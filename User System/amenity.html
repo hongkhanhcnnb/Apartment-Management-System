@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiện ích</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: #111;
+            list-style: 1.15;
+        }
+        #wrapper{
+            max-width: 1170px;
+            margin: 10px auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            border: 1px solid #9f9e9e;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 49%;  
+            padding-left: 3px;
+            padding-right: 3px;  
+            box-sizing: border-box;
+            margin-bottom: 30px;        
+        }
+        ul.products li img{
+            height: 500px;
+            width: 100%;
+            object-fit: contain; 
+        }
+        ul.products li .product-top{
+            position: relative;
+            overflow: hidden;
+            height: 450px; 
+            width: 550px;
+        }
+        ul.products li .product-top .product-thumb img{
+            display: block;
+            /*width: 100%;
+            height: 100%;*/
+            width: 550px;
+            height: 450px;
+            object-fit: cover; 
+        }
+        ul.products li:hover .product-top .product-thumb img{
+            filter: opacity(80%);
+        }
+        ul.products li .product-top a.booking-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #9f9e9e;
+            color: #fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover  a.booking-now{
+            bottom: 0px;
+        }
+        ul.products li .product-info{
+            padding: 10px 0px;
+        }
+        ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 10px;
+        }
+        ul.products li .product-info a.product-name{
+            font-size: 18px;
+            color: #69562f;
+            padding: 3px 0px;
+            font-weight: bold;
+        }
+        ul.products li .product-info a.product-price{
+            color: #111;
+            padding: 2px 10px;
+        }
+    </style>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>DANH SÁCH TIỆN ÍCH</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="gym.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">GYM</a>
+                        <a href="" class="product-name">BODYFIT GYM</a>
+                        <div class="product-price">
+                            Để thành công và phát triển như hôm nay là nhờ vào sự tin cậy của quý khách hàng đã sử dụng dịch vụ. 
+                            <br>
+                            BODYFIT GYM hướng tới mục tiêu trở thành chuỗi các phòng tập trên toàn quốc nhằm cung ứng huấn luyện viên cá nhân cũng như các dịch vụ của trung tâm mang đến sức khỏe cho mọi người với phương châm" cho cuộc sống tốt đẹp hơn".
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="cafe.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">CAFE</a>
+                        <a href="" class="product-name">ALAMBÉ CAFE</a>
+                        <div class="product-price">
+                            Với ALAMBÉ, Cà phê không chỉ là một loại thức uống mà nó còn là những câu chuyện, cả một nền văn hoá.
+                            <br>
+                            Từ hạt cà phê được tuyển chọn và thu mua trực tiếp từ các hộ nông dân ở: Đắk Lắk, Kon Tum, Đạ Sar, Đà Lạt…
+                            <br>
+                            Trải qua quá trình chế biến và rang xay được ALAMBÉ thực hiện dựa trên công thức đặc biêt, những kỹ thuật khác nhau áp dụng cho những loại hạt khác nhau giúp dậy nên hương vị cà phê đặc trưng vốn có của từng vùng nguyên liệu.
+                            <br>
+                            Đồng hành cùng đội ngũ nghiên cứu và phát triển dày dặn kinh nghiệm, ALAMBÉ tự tin rằng "Những hạt cà phê Việt Nam (Robusta và Arabica) nếu được lựa chọn và chế biến dựa theo tiêu chuẩn của ALAMBÉ sẽ có thể cạnh tranh so với các thương hiệu cà phê nổi tiếng thế giới".
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="massage.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">MASSAGE</a>
+                        <a href="" class="product-name">OKAGI'SPA</a>
+                        <div class="product-price">
+                            Chào mừng Quý Khách đến OKAGI'SPA, chúng tôi tự hào là spa massage trị liệu uy tín - lành mạnh & KHÔNG NHẬN TIPS.
+                            <br>
+                            OKAGI'SPA là nơi giúp bạn đắm chìm vào sự thư giãn đồng thời giành lại sức sống tiềm tàng, mạnh mẽ vốn có từ tạo hoá. Đến với OKAGI'SPA, mọi sự áp lực, mệt mỏi đều được xua tan đi, chúng tôi có những giải pháp thư giãn tốt cho sức khỏe & tinh thần phù hợp với tất cả mọi người. 
+                            <br>
+                            Bên cạnh đó, OKAGI'SPA cung cấp những gói dịch vụ dành riêng cho gia đình, couple để các thành viên trải nghiệm những phút giây massage thư giãn trong không gian ấm áp cùng nhau.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="meeting.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">MEETING ROOM</a>
+                        <a href="" class="product-name">WORKIFY MEETING ROOM</a>
+                        <div class="product-price">
+                            Tại Workify, chúng tôi cung cấp nhiều không gian phòng họp với đầy đủ phương tiện hỗ trợ đáp ứng các yêu cầu hội họp khác nhau: từ các cuộc họp quan trọng với đối tác đến các buổi họp nội bộ thảo luận ý tưởng, các chương trình hội thảo, đào tạo, phỏng vấn hay dạy học. 
+                            <br>
+                            Workify hỗ trợ set up bàn ghế, âm thanh theo yêu cầu.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="pool.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">SWIMMING POOL</a>
+                        <a href="" class="product-name">CELINA SWIMMING POOL</a>
+                        <div class="product-price">
+                            Nằm ở tầng thượng của KHÁCH SẠN CELINA. Hồ bơi là nơi bạn có thể đắm mình trong làn nước mát lạnh, tắm nắng, khách bơi xong có thể lên bờ dựa vào các chiếc ghế dài để nghỉ ngơi hay phơi nắng. 
+                            <br>
+                            Với khăn sạch được phục vụ miễn phí và thưởng thức những món ăn nhẹ và thức uống hấp dẫn được phục vụ cả ngày.
+                            <br>
+                            Nước trong hồ được lọc liên tục 24/24 h để đảm bảo vệ sinh.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="restaurant.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">RESTAURANT</a>
+                        <a href="" class="product-name">FRENCH GRILL RESTAURANT</a>
+                        <div class="product-price">
+                            French Grill Restaurant là nhà hàng Pháp nổi tiếng bởi độ sang chảnh bậc nhất Thành phố Hồ Chí Minh. 
+                            <br>
+                            Đến  French Grill Restaurant bạn sẽ được thưởng thức những món ăn độc đáo, hiện đáo trong không gian ẩm thực sang trọng nhưng không kém phần tinh tế. 
+                            <br>
+                            Đặc biệt nhà hàng này còn nằm trong top những nhà hàng có diện tích lớn nhất Thành phố Hồ Chí Minh. Tuy không nằm ở vị trí trung tâm nhưng khi bạn đến với hàng sang trọng và thưởng thức những món ăn hảo hạng.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="shopping.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">SHOPPING</a>
+                        <a href="" class="product-name">MARC SHOPPING</a>
+                        <div class="product-price">
+                            Với khơi nguồn từ lòng đam mê thời trang, khát khao mang đến cái đẹp cho tất cả phụ nữ và hơn thế nữa là mong muốn được góp phần tạo dựng hình ảnh mới lạ cho ngành công nghiệp thời trang Việt Nam, MARC đã tập trung đầu tư vào chất lượng và kiểu dáng sản phẩm để thương hiệu MARC Fashion trở thành một cái tên gần gũi hơn với khách hàng. 
+                            <br>
+                            Với phương châm "BRIGHTEN YOUR DAY", MARC mong muốn mang lại cho khách hàng những sản phẩm tốt nhất để các bạn không chỉ thể hiện cá tính bản thân mà còn lan toả nguồn năng lượng tích cực, mạnh mẽ đến xung quanh.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="sports.jpg" alt="">
+                        </a>
+                        <a href="" class="booking-now">Đăng ký ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">SPORTS</a>
+                        <a href="" class="product-name">AKKA SPORTS</a>
+                        <div class="product-price">
+                            Sân bóng đá AKKA là một sân cỏ nhân tạo có diện tích rộng và chất lượng thuộc hàng top tại Thành phố Hồ Chí Minh. Quy mô của sân bóng này rất lớn với 6 sân cỏ mini cho 7 người . 
+                            <br>
+                            Điểm nổi bật của sân bóng AKKA chính là chất lượng cỏ nhân tạo cùng với hệ thống chiếu sáng, thoát nước cực kỳ tốt. 
+                            <br>
+                            Ngoài ra chất lượng dịch vụ đi kèm tại sân cũng rất chuyên nghiệp và nhiệt tình. Với chất lượng phục vụ tốt nên dù có diện tích lớn nhưng vào những giờ cao điểm thì rất khó để đặt được sân nếu bạn không đặt trước.
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

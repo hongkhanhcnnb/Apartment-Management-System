@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý chung cư</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 17px;
+        }
+        .clearfix {
+            clear: both;
+        }
+        ul li {
+            list-style: none;
+        }
+        #wrapper {
+            width: 1000px;
+            margin: 1px auto;
+        }
+        #header {
+            background-color: antiquewhite;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+            width: 70vw;
+            height: 20vh;
+            padding: 3px 120px;
+        }
+        #logo {
+            float: left;
+            margin: 1px auto;
+            padding: 1px 0px;
+        }
+        ul#main_menu {
+            float: right;
+            position: relative;
+        }
+        ul#main_menu li {
+            float: left;
+            margin: 2px auto;
+            position: relative;
+        }
+        ul#main_menu li {
+            border-bottom: 2px solid rgb(72, 71, 71);
+            padding: 30px 1px;
+        }
+        ul#main_menu li a {
+            padding: 60px 15px;
+            text-decoration: none;
+            color: rgb(72, 71, 71);
+            transition: background-color 0.3s;
+        }
+        ul#main_menu li a:hover {
+            background-color: #2c2a2a;
+            color: white;
+        }
+        ul#main_menu li:hover ul, ul#main_menu li:focus ul {
+            display: block;
+        }
+        ul#main_menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: antiquewhite;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 220px;
+        }
+        ul#main_menu li ul li {
+            border: none;
+            padding: 10px;
+        }
+        ul#main_menu li ul li a {
+            padding: 10px 15px;
+            color: rgb(72, 71, 71);
+            display: block;
+        }
+        ul#main_menu li ul li a:hover {
+            background-color: #2c2a2a;
+            color: white;
+        }
+        body {
+            background-image: url("anhchungcu.gif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 85vw;
+            height: 90vh;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var unitMenu = document.querySelector('#unit-menu');
+            var unitLink = document.querySelector('#unit-link');
+
+            unitLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                unitMenu.style.display = unitMenu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!unitLink.contains(event.target) && !unitMenu.contains(event.target)) {
+                    unitMenu.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" id="logo">
+                <img src="logopreview.png" alt="" width="130" height="130">
+            </a>
+            <ul id="main_menu">
+                <b>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Tổng quan</a></li>
+                <li>
+                    <a href="unit.html" id="unit-link">Căn hộ</a>
+                    <ul id="unit-menu">
+                        <li><a href="1-bedroom.html">Căn hộ một phòng ngủ</a></li>
+                        <li><a href="2-bedroom.html">Căn hộ hai phòng ngủ</a></li>
+                        <li><a href="lifehouse.html">Lifehouse</a></li>
+                        <li><a href="studio.html">Studio</a></li>
+                    </ul>
+                </li>
+                <li><a href="vendor.html">Dịch vụ</a></li>
+                <li><a href="amenity.html">Tiện ích</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="signin.html">Đăng nhập</a></li>
+                </b>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div id="wp_content">
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+</html>

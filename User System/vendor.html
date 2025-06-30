@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Dịch vụ</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: url('nenvendor.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 65rem;
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            height: auto;
+            border-radius: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.5); 
+        }
+        h1 {
+            text-align: center;
+            padding: 10px;
+            color: #69562f;
+        }
+        .accordion-header {
+            background: #f1e6cf;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .accordion-header{
+            color: #69562f;
+        }
+        .accordion-item.active .accordion-header {
+            background: #e4cd9f;
+            color: #111;
+        }
+        .arrow {
+            transition: all 0.3s;
+        }
+        .accordion-item.active .arrow {
+            transform: rotate(180deg);
+        }
+        .accordion-body {
+            padding: 10px 20px;
+            display: none; 
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.accordion-header').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body').slideToggle();
+            });
+        });
+    </script>
+    <div id="wrapper">
+        <h1>CÁC MÔ HÌNH DỊCH VỤ</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ cung cấp điện</h3>
+                    <i class="arrow fas fa-sort-down" aria-hidden="true"></i>
+                </div>
+                <div class="accordion-body">
+                    - Khi cuộc sống ngày càng hiện đại thì việc tiêu thụ điện năng ngày càng gia tăng. Bởi các hộ gia đình sở hữu khá nhiều các thiết bị điện phục vụ cuộc sống sinh hoạt như các loại máy tính, ti vi, nồi gia dụng, điều hòa, nóng lạnh, quạt sương, bàn là… Việc quan tâm tới giá điện nước ở chung cư khi chuyển tới sống tại môi trường mới là điều cần thiết.
+                    <br>
+                    - Chính vì vậy, chung cư đã cung cấp mô hình 'Dịch vụ cung cấp điện'. Cư dân sống tại các căn hộ chung cư sẽ chi trả mức giá tùy theo mức độ sử dụng điện.
+                    <br>
+                    - Cụ thể, giá bán lẻ điện sinh hoạt mới nhất:
+                    <br>
+                        &emsp;Bậc 1 (0 - 50kWh) sẽ tính 1.678 đồng/kWh
+                        <br>
+                        &emsp;Bậc 2 (51 - 100kWh) sẽ tính 1.734 đồng/kWh
+                        <br>
+                        &emsp;Bậc 3 (101 - 200kWh) sẽ tính 2.014 đồng/kWh
+                        <br>
+                        &emsp;Bậc 4 (201 - 300kWh) sẽ tính 2.536 đồng/kWh
+                        <br>
+                        &emsp;Bậc 5 (301 - 400kWh) sẽ tính 2.834 đồng/kWh
+                        <br>
+                        &emsp;Bậc 6 (401kWh trở lên) sẽ tính 2.927 đồng/kWh
+                        <br>
+                    - Công thức tính tiền điện ở chung cư như sau: Lượng điện tiêu thụ (kWh) x Giá điện (theo mức) + 10% (GTGT). 
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ cung cấp nước</h3>
+                    <i class="arrow fas fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Điện và nước là nhu cầu tối thiểu, cơ bản mà dù sống ở đâu, nhà đất hay chung cư đều cần phải có và dùng thường xuyên mỗi ngày. Nhiều người mua chung cư lần đầu, chưa có kinh nghiệm thường lăn tăn không rõ giá điện nước ở các căn hộ có khác gì với giá điện nước ở nhà đất bình thường hay không.
+                    <br>
+                    - Chính vì vậy, chung cư đã cung cấp mô hình 'Dịch vụ cung cấp nước'. Cư dân sống tại các căn hộ chung cư sẽ chi trả mức giá tùy theo mức độ sử dụng nước.
+                    <br>
+                    - Cụ thể, giá nước sinh hoạt mới nhất:
+                    <br>
+                        &emsp;Đô thị đặc biệt, đô thị loại 1
+                        <br>
+                            &emsp;&emsp;Mức tiền tối thiểu (đồng/m3) 3.500 đồng
+                            <br>
+                            &emsp;&emsp;Mức tiền tối đa (đồng/m3) 18.000 đồng
+                            <br>
+                        &emsp;Đô thị loại 2, loại 3, loại 4, loại 5
+                        <br>
+                            &emsp;&emsp;Mức tiền tối thiểu (đồng/m3) 3.000 đồng
+                            <br>
+                            &emsp;&emsp;Mức tiền tối đa (đồng/m3) 15.000 đồng
+                            <br>
+                    - Công thức tính tiền nước ở chung cư như sau: Lượng nước tiêu thụ x đơn giá/m3 thương ứng. 
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ xử lý rác thải</h3>
+                    <i class="arrow fas fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Đây là khoản phí vệ sinh chung và phí thang máy. 
+                    <br>
+                    - Chi phí này là bắt buộc vì để đảm bảo vệ sinh và duy trì hoạt động ổn định hoạt động của chung cư. 
+                    <br>
+                    - Tại chung cư, mức phí này sẽ dao động trong khoảng 100.000 - 200.000 đồng/tháng.  
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ bảo vệ</h3>
+                    <i class="arrow fas fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Chung cư hay khu chung cư là những khu nhà nhiều hộ dân sinh sống bên trong các căn hộ, có hệ thống công trình hạ tầng sử dụng chung. Chung cư là mô hình cộng đồng sinh sống hiện đại, văn minh bên trong các căn hộ, có hệ thống công trình hạ tầng sử dụng chung. Vì thế dễ dẫn đến sự mất an toàn, an ninh trong chung cư.
+                    <br>
+                    - Cũng chính vì vậy, chúng tôi cung cấp 'Dịch vụ bảo vệ'. Dịch vụ bảo vệ tòa nhà, chung cư giúp bảo vệ an toàn, an ninh trong chung cư.
+                    <br>
+                    - Cụ thể chi phí hang tháng: 100.000 (đồng/tháng).
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ dọn dẹp</h3>
+                    <i class="arrow fas fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Dịch vụ vệ sinh căn hộ chung cư đang ở là việc tổng vệ sinh căn hộ bao gồm: hút bụi, dọn rác, lau chùi sạch sẽ,… cho các khu vực chung như: thang máy, lối đi, hành lang, phòng thông tin, sảnh tiếp khách, bãi đỗ xe, phòng chờ,… và các khu vực riêng tư như phòng ngủ, phòng khách, nhà bếp, phòng tắm và nhà vệ sinh,…
+                    <br>
+                    - Tùy theo nhu cầu mà bạn có thể lựa chọn 1 trong những gói dịch vụ vệ sinh căn hộ chung cư như sau:
+                    <br>
+                        &emsp;Vệ sinh căn hộ đang ở tính theo m2: là dịch vụ dành cho những gia chủ muốn tổng vệ sinh căn hộ của mình từ trên xuống dưới, từ trong ra ngoài mọi khu vực.
+                        <br>
+                        &emsp;Vệ sinh căn hộ đang ở theo giờ: là một dịch vụ rất phổ biến và nhiều gia chủ lựa chọn khi họ có nhu cầu dọn dẹp nhà cửa trong một khung giờ nhất định, nhằm để chuẩn bị nhà tiếp khách hay dọn dẹp sau khi nhà có tiệc,…
+                        <br>
+                        &emsp;Vệ căn hộ chung cư đang ở theo tháng: là gói dịch vụ dành cho những khách hàng có nhu cầu thuê nhân viên cố định đến vệ sinh chung cư. Tùy theo diện tích căn hộ, các công việc yêu cầu,.. mà bạn có thể lựa chọn số giờ và số ngày làm việc tương ứng.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ bảo trì</h3>
+                    <i class="arrow fas fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Không giống các phí dịch vụ chung cư khác, phí bảo trì chung cư chỉ cần đóng 1 lần duy nhất khi ký hợp đồng căn hộ. 
+                    <br>
+                    - Cụ thể, mức phí này sẽ được tính bằng 2% trong tổng giá trị căn hộ. Vì vậy, giá trị căn hộ càng lớn thì phí bảo trì càng cao.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ trang máy</h3>
+                    <i class="arrow fa-solid fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Mức phí này sẽ tùy thuộc vào loại chung cư mà bạn ở như chung cư bình dân hay chung cư cao cấp, ngoài ra nó còn tùy thuộc vào diện tích căn hộ nữa. 
+                    <br>
+                    - Cụ thể, phí dịch vụ trung bình hàng tháng ở các căn hộ chung cư hiện nay dao động từ 5.000 đồng tới 20.000 đồng/m2/tháng, tùy vào loại chung cư và thỏa thuận giữa chủ đầu tư và người mua chung cư ở thời điểm ban đầu.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ kỹ thuật</h3>
+                    <i class="arrow fa-solid fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Phí kỹ thuật chung cư được sử dụng vào mục đích vận hành hệ thống kỹ thuật trong và phát sinh bên ngoài chung cư.
+                    <br>
+                    - Phí quản lý chung cư được tính theo công thức sau đây:
+                    <br>
+                        &emsp;Diện tích thông thủy căn hộ x giá dịch vụ quản lý (đối với căn hộ chung cư)
+                        <br>
+                        &emsp;Diện tích sàn sử dụng x giá dịch vụ quản lý (đối với khu nhà ở thấp tầng như biệt thự, liền kề, nhà phân lô…)
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ cứu hỏa</h3>
+                    <i class="arrow fa-solid fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Một chung cư mini với diện tích khoảng 200m2/tầng thì chi phí lắp đặt hệ thống phòng cháy chữa cháy sẽ dao động trên 30 triệu đồng/tầng, tùy số lượng thiết bị lắp đặt. 
+                    <br>
+                    - Ngoài ra, chi phí bảo dưỡng hệ thống phòng cháy chữa cháy mỗi năm trong khoảng 15-20 triệu đồng.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Dịch vụ Internet</h3>
+                    <i class="arrow fa-solid fa-caret-down"></i>
+                </div>
+                <div class="accordion-body">
+                    - Đây là khoản phí sinh hoạt hàng tháng mà mỗi gia đình đều bắt buộc phải chi trả theo giá quy định của Nhà nước tương tự như các ngôi nhà mặt đất khác. Còn đối với internet truyền hình, mức phí sẽ tùy thuộc vào gói mạng của các nhà mạng mà bạn đăng ký sử dụng.
+                    <br>
+                    - Chi phí internet tại chung cư dao động từ 70.000 - 200.000 đồng/tháng tùy vào nhu cầu và năng suất sử dụng của mỗi hộ dân như: lướt wifi, dùng truyền hình Internet.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
